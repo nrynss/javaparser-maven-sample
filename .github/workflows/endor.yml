@@ -39,7 +39,7 @@ jobs:
       id-token: write
       repository-projects: read
       pull-requests: read
-      contents: read
+      contents: write
     name: endorctl-scan
     runs-on: ubuntu-latest
     steps:
