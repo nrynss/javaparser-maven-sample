@@ -33,7 +33,7 @@ jobs:
         scan_secrets: true
         pr: true
         enable_pr_comments: ${{ env.ENDORCTL_PR }}
-        github_token: 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 # Required for PR comments on new policy violations
+        github_token: ${{ secrets.GITHUB_TOKEN }} # Required for PR comments on new policy violations
 
   scan-main:
     permissions:
